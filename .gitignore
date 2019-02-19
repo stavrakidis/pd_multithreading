@@ -1,0 +1,6 @@
+.idea*
+*.iml
+
+.pytest_cache
+.coverage
+pd_multithreading.egg-info
