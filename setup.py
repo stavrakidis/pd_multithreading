@@ -10,7 +10,7 @@ setup(
     uthor='Kyriakos Stavrakidis',
     author_email='kstavrakidis@gmail.com',
     description='Simple function to parallelize the mapping function of Pandas DataFrame',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     url='https://github.com/stavrakidis/pd_multiprocessing',
     license='LICENSE.txt',
     packages=['pd_multiprocessing', 'pd_multiprocessing.test'],
