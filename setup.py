@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='pd_multiprocessing',
-    version='1.0.0',
+    version='1.0.1',
     uthor='Kyriakos Stavrakidis',
     author_email='kstavrakidis@gmail.com',
     description='Simple function to parallelize the mapping function of Pandas DataFrame',
