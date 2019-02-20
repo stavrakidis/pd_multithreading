@@ -3,8 +3,9 @@ python:
 # - '3.4'
 - '3.5'
 - '3.6'
-script: pytest --cov=pd_multiprocessing --cov-report term-missing
+# script: pytest --cov=pd_multiprocessing --cov-report term-missing
 after_success:
+  - pytest --cov=pd_multiprocessing --cov-report term-missing
   - coveralls
 notifications:
   slack:
