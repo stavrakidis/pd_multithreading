@@ -81,17 +81,3 @@ def test_df_map_correct_no_of_cores_perc(monkeypatch):
         return list_df
     monkeypatch.setattr(ProcessPoolExecutor, 'map', ex_map)
     df_map(add_1_to_col2, df, no_of_cores_perc=0.415)
-
-
-def test_df_map_correct_no_of_cores_perc2(monkeypatch):
-    df = pd.DataFrame.from_dict({'col1': ['row1', 'row2'], 'col2': [1, 2]})
-    try:
-        monkeypatch.setattr(os, 'sched_getaffinity', lambda _: range(100))
-    except AttributeError:
-        monkeypatch.setattr(multiprocessing, 'cpu_count', lambda: 100)
-
-    def ex_map(_self, _func, list_df):
-        assert len(list_df) == 2
-        return list_df
-    # monkeypatch.setattr(ProcessPoolExecutor, 'map', ex_map)
-    df_map(add_1_to_col2, df, no_of_cores_perc=0.41)
