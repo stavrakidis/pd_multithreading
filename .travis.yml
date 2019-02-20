@@ -3,8 +3,6 @@ python:
 # - '3.4'
 - '3.5'
 - '3.6'
-install:
-  - pip install coveralls
 script: pytest --cov=pd_multiprocessing --cov-report term-missing
 after_success:
   - coveralls
