@@ -6,7 +6,7 @@ import logging
 import pandas as pd
 
 
-def df_map(func, df, no_of_cores=None, no_of_cores_perc=None) -> pd.DataFrame:
+def df_map(func, df: pd.DataFrame, no_of_cores: int = None, no_of_cores_perc: float = None) -> pd.DataFrame:
     """
     Maps function func to DataFrame df using multithreading
 
