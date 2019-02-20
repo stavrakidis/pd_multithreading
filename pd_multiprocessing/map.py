@@ -1,14 +1,12 @@
 import os
 import math
 from concurrent.futures import ProcessPoolExecutor
-from typing import Callable
 import multiprocessing as mp
 import logging
 import pandas as pd
 
 
-def df_map(func: Callable[[pd.DataFrame], pd.DataFrame], df: pd.DataFrame, no_of_cores: int = None,
-           no_of_cores_perc: float = None) -> pd.DataFrame:
+def df_map(func, df, no_of_cores=None, no_of_cores_perc=None) -> pd.DataFrame:
     """
     Maps function func to DataFrame df using multithreading
 
@@ -52,13 +50,3 @@ def df_map(func: Callable[[pd.DataFrame], pd.DataFrame], df: pd.DataFrame, no_of
         else:
             res = res.append(df_res_element)
     return res
-
-
-def twotimes(row):
-    row['col2'] = row['col1']*2
-    return row
-
-
-if __name__ == '__main__':
-    df = pd.DataFrame.from_dict({'col1': range(100)})
-    print(df_map(twotimes, df))
