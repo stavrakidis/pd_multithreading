@@ -1,8 +1,8 @@
-=================
-pd_multithreading
-=================
+==================
+pd_multiprocessing
+==================
 
-pd_multithreading provides a simple, parallelized function to apply a user defined function rowwise on a Pandas Dataframe.
+pd_multiprocessing provides a simple, parallelized function to apply a user defined function rowwise on a Pandas Dataframe.
 
 
 Usage
@@ -10,7 +10,7 @@ Usage
 
 A typical usage looks like this
 
-    from pd_multithreading.map import df_map
+    from pd_multiprocessing.map import df_map
 
 
     def twotimes(row):

@@ -4,4 +4,4 @@ venv
 
 .pytest_cache
 .coverage
-pd_multithreading.egg-info
+pd_multiprocessing.egg-info
