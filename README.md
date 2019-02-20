@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/stavrakidis/pd_multiprocessing.png)](https://travis-ci.org/stavrakidis/pd_multiprocessing)
+[![Coverage Status](https://coveralls.io/repos/github/stavrakidis/pd_multiprocessing/badge.svg?branch=master)](https://coveralls.io/github/stavrakidis/pd_multiprocessing?branch=master)
 
 # pd_multiprocessing
 
