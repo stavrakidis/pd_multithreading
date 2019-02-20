@@ -1,7 +1,9 @@
 language: python
 python:
-  - "3.4"
-  - "3.5"
-  - "3.6"
-
+- '3.4'
+- '3.5'
+- '3.6'
 script: pytest --cov=pd_multiprocessing
+notifications:
+  slack:
+    secure: bQO5amy8KWVDMndi/BitEB++WnCx3RT6sw3zV52CNJ46ucc6pBWc3IvwlT/dT+DlAqfrJKV+KIEvHWfJ8eGFSopSWt9d1ElwZR2PQegG6nudQsu+VZuNaL6Mw1w2NBzU3yUPDVGRU39Qb0af/3jIH61uwAPgeUyQIseFoPtwYnXxop/I3c8I4AX/0Q2OUL78wNvgRoTMf3/RmcRXwv33p1wk8J8oY6F7iS1gbXQUtWvyTbCQOKNW6hMLMXqwIttjnRzI8ZLpQ5gLyhQZio5ddGz5plIrzU8eB/NkMXAo2dr47F2WQbe+/16IFasaKU1r8Y8uK2QMuewQ3OdXlXHwMzUGiFHORjXrX9BpTZZJtiyXYboSsclI3cJvfkwiuIPpQl5JIJlWsKf4nmgFgLcxiBCu79G0mRRXSubldnnwpwMPP3cHhvSShFdaM0engayJlIzyguUOPDtE9CHU+YKO0cKY+/ecaAdok3wBuKys40/k7bZ5WdWQ25TSNK0+UYlGX8UDKhM5A4Z+0FbjhuWBxipYXT0am/nvbwDnpBKbHvJCn38TGGYjgb9YO2V0wbraP59QdCvfG5/jwVwecWe2F2M8ztNxhZWQMdA9R03riyKirdxWGDOHAsGJ6hfQCp5ukRBLHg705NUNMMjwxV/CtGa8vc/bit+BIrZAFCs/Cok=
