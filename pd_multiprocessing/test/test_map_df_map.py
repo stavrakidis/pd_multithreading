@@ -23,6 +23,22 @@ def test_df_map(monkeypatch):
     assert row.iloc[0]['col2'] == 3
 
 
+def test_df_map_unix(monkeypatch):
+    def raise_attribute_error(nr: int):
+        raise AttributeError()
+
+    df = pd.DataFrame.from_dict({'col1': ['row1', 'row2'], 'col2': [1, 2]})
+    try:
+        monkeypatch.setattr(os, 'sched_getaffinity', raise_attribute_error)
+    except AttributeError:
+        monkeypatch.setattr(multiprocessing, 'cpu_count', lambda: 2)
+    df = df_map(add_1_to_col2, df)
+    row = df[df['col1'] == 'row1']
+    assert row.iloc[0]['col2'] == 2
+    row = df[df['col1'] == 'row2']
+    assert row.iloc[0]['col2'] == 3
+
+
 def test_df_map_correct_no_of_cores(monkeypatch):
     df = pd.DataFrame.from_dict({'col1': ['row1', 'row2'], 'col2': [1, 2]})
     try:
