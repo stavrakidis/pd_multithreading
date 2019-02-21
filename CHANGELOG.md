@@ -4,6 +4,8 @@
 ### Dokumentation
 - [#2](https://github.com/stavrakidis/pd_multiprocessing/issues/2): Added Sphinx autodoc 
 - [#3](https://github.com/stavrakidis/pd_multiprocessing/issues/3): Nicer dokumentation
+- [#4](https://github.com/stavrakidis/pd_multiprocessing/issues/4): Changelog now part of dokumentation 
+- [#5](https://github.com/stavrakidis/pd_multiprocessing/issues/5): Added link to rtd in setup.cfg
 
 ## pd_multiprocessing 1.0.3 (2019-02-20)
 ### Trivial/Internal Changes
