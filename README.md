@@ -44,3 +44,20 @@ if __name__ == '__main__':
     df = pd.DataFrame.from_dict({'col1': range(100)})
     print(df_map(twotimes, df))
 ```
+
+## Documentation
+For the documentation please see <https://pd-multiprocessing.readthedocs.io/en/latest/>.
+
+## Bugs/Request
+Please use the [GitHub issue tracker](https://github.com/stavrakidis/pd_multiprocessing/issues) to submit bugs or
+request features.
+
+## Changelog
+Consult the [Changelog](https://pd-multiprocessing.readthedocs.io/en/latest/changelog.html) page for fixes and
+enhancements of each version.
+
+## License
+Copyright Kyriakos Stavrakidis, 2019.
+
+Distributed under the terms of the [MIT license](https://github.com/stavrakidis/pd_multiprocessing/blob/master/LICENSE), 
+pd_multiprocessing is free and open source software.
