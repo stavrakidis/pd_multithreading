@@ -5,6 +5,18 @@
 
 pd_multiprocessing provides a simple, parallelized function to apply a user defined function rowwise on a Pandas Dataframe.
 
+## Requirements
+
+- [pandas](https://pandas.pydata.org/) 0.22.0+
+- [pytest](ttps://docs.pytest.org/en/latest/) 3.4.1+
+
+### Dokumentation
+
+If you want to build the dokumentation, you need the following packages:
+
+- Sphinx
+- sphinx_rtd_theme
+- m2r
 
 ## Usage
 
