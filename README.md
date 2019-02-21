@@ -9,7 +9,7 @@ pd_multiprocessing provides a simple, parallelized function to apply a user defi
 ## Requirements
 
 - [pandas](https://pandas.pydata.org/) 0.22.0+
-- [pytest](ttps://docs.pytest.org/en/latest/) 3.4.1+
+- [pytest](https://docs.pytest.org/en/latest/) 3.4.1+
 
 ### Documentation
 
