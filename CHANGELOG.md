@@ -1,6 +1,10 @@
 # Changelog history
 
-## pd_multiprocessing 1.0.2 (2019-02-20)
+## pd_multiprocessing 1.0.4 (2019-02-21)
+### Dokumentation
+- [#2](https://github.com/stavrakidis/pd_multiprocessing/issues/2): Added Sphinx autodoc 
+
+## pd_multiprocessing 1.0.3 (2019-02-20)
 ### Trivial/Internal Changes
 - Changes due to pypi
 - Rename of some text files
