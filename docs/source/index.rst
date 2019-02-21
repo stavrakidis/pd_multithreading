@@ -8,6 +8,7 @@ Table of Contens
 .. toctree::
 
     methods
+    changelog
 
 
 Indices
