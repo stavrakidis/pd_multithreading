@@ -1,3 +1,4 @@
+[![Pypi Link](https://img.shields.io/pypi/v/pd_multiprocessing.svg)](https://pypi.org/project/pd-multiprocessing/)
 [![Build Status](https://travis-ci.org/stavrakidis/pd_multiprocessing.png)](https://travis-ci.org/stavrakidis/pd_multiprocessing)
 [![Coverage Status](https://coveralls.io/repos/github/stavrakidis/pd_multiprocessing/badge.svg?branch=master)](https://coveralls.io/github/stavrakidis/pd_multiprocessing?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/pd-multiprocessing/badge/?version=latest)](https://pd-multiprocessing.readthedocs.io/en/latest/?badge=latest)
